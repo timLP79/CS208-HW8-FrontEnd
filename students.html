@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>Students Management</h1>
+
+<p><a href="index.html">Back to index</a></p>
+
+<hr>
+
+<h2>Add student</h2>
+<form id="id_form_create_new_student" action="http://localhost:8080/students" method="post">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName">
+    <br>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" id="lastName">
+    <br>
+
+    <label for="birthDate">Birth Date</label>
+    <input type="date" name="birthDate" id="birthDate">
+    <br>
+
+    <button type="submit">Create new student</button>
+</form>
+<div id="create_new_student">
+    Information about the success/failure of creating a new student will be displayed here...
+</div>
+
+
+<hr>
+
+<h2>Show student details</h2>
+<div id="show_student_details">
+    The details for the student returned from the API call will be shown here...
+</div>
+
+<hr>
+
+<h2>Update student details</h2>
+<div id="update_student_details">
+    The form to update the student will be shown here...
+</div>
+
+<hr>
+
+<h2>Delete student</h2>
+<div id="delete_student">
+    Information about the success/failure of deleting a student will be displayed here...
+</div>
+
+<hr>
+
+<h2>Get all students</h2>
+<button onclick="getAndDisplayAllStudents();">Get and display all students</button>
+<div id="list_of_students">
+    The students returned from the API call will be shown here...
+</div>
+
+<script src="students.js"></script>
+</body>
+
+</html>

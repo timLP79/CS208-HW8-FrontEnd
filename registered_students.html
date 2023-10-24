@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registered Students Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>Registered Students Management</h1>
+
+<p><a href="index.html">Back to index</a></p>
+
+<hr>
+
+<h2>List all registered students</h2>
+
+<hr>
+
+<h2>Add a new student to a class</h2>
+<form id="id_form_add_new_student_to_a_class" action="http://localhost:8080/add_student_to_class" method="post">
+    <label for="selectStudentForEnrollment">Student to enroll:</label>
+    <select name="studentId" id="selectStudentForEnrollment">
+        <!-- TODO: Make a call to the API to retrieve all the students and then update the list of options -->
+        <option value="" disabled selected>Select a student</option>
+        <option value="1">Alice</option>
+        <option value="2">Bob</option>
+        <option value="3">Carol</option>
+    </select>
+    <br>
+
+    <label for="selectClassForEnrollment">Class to enroll in:</label>
+    <select name="classId" id="selectClassForEnrollment">
+        <!--
+            TODO: See registered_students.js for sample code that makes a call to the API
+             to retrieve all the classes and then updates/refreshes this list of options
+         -->
+        <option value="" disabled selected>Select a class</option>
+        <option value="1">CS 410 Databases</option>
+        <option value="2">CS 408 Full Stack Web Development</option>
+    </select>
+    <br>
+
+    <button type="submit">Enroll student in class</button>
+</form>
+
+<hr>
+
+<h2>Drop an existing student from a class</h2>
+
+<hr>
+
+<h2>Show all students that are taking a class</h2>
+
+<hr>
+
+<h2>Show all classes in which a student is enrolled</h2>
+
+<script src="registered_students.js"></script>
+</body>
+
+</html>

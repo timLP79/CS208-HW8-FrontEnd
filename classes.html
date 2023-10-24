@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classes Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Classes Management</h1>
+
+    <p><a href="index.html">Back to index</a></p>
+
+    <hr>
+
+    <h2>Add class</h2>
+    <form id="id_form_create_new_class" action="http://localhost:8080/classes" method="post">
+        <label for="code">Class Code</label>
+        <input type="text" name="code" id="code" required>
+        <br>
+
+        <label for="title">Class Title</label>
+        <input type="text" name="title" id="title">
+        <br>
+
+        <label for="description">Class Description</label>
+        <input type="text" name="description" id="description">
+        <br>
+
+        <label for="maxStudents">Max students in class</label>
+        <input type="number" name="maxStudents" id="maxStudents">
+        <br>
+
+        <button type="submit">Create new class</button>
+    </form>
+    <div id="create_new_class">
+        Information about the success/failure of creating a new class will be displayed here...
+    </div>
+
+
+    <hr>
+
+    <h2>Show class details</h2>
+    <div id="show_class_details">
+        The details for the class returned from the API call will be shown here...
+    </div>
+
+    <hr>
+
+    <h2>Update class details</h2>
+    <div id="update_class_details">
+        The form to update the class will be shown here...
+    </div>
+
+    <hr>
+
+    <h2>Delete class</h2>
+    <div id="delete_class">
+        Information about the success/failure of deleting a class will be displayed here...
+    </div>
+
+    <hr>
+
+    <h2>Get all classes</h2>
+    <button onclick="getAndDisplayAllClasses();">Get and display all classes</button>
+    <div id="list_of_classes">
+        The classes returned from the API call will be shown here...
+    </div>
+
+    <script src="classes.js"></script>
+</body>
+
+</html>
