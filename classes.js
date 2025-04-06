@@ -10,11 +10,11 @@ const div_delete_class = document.getElementById("delete_class");
 const div_list_of_classes = document.getElementById("list_of_classes");
 
 
-// // TODO: uncomment the following code to fetch and display the classes after the page loads
-// document.addEventListener("DOMContentLoaded", async function()
-// {
-//     await getAndDisplayAllClasses();
-// });
+//TODO: uncomment the following code to fetch and display the classes after the page loads
+document.addEventListener("DOMContentLoaded", async function()
+{
+    await getAndDisplayAllClasses();
+});
 
 
 // =====================================================================================================================
