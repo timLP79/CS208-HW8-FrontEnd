@@ -1,0 +1,115 @@
+/* Base color palette */
+:root {
+    --bsu-blue: #0033A0;
+    --bsu-orange: #D64309;
+    --bsu-light-gray: #f4f4f4;
+    --bsu-dark-gray: #333;
+    --bsu-white: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem;
+    background-color: var(--bsu-light-gray);
+    color: var(--bsu-dark-gray);
+}
+
+h1, h2 {
+    color: var(--bsu-blue);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--bsu-orange);
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--bsu-blue);
+}
+
+form {
+    background-color: var(--bsu-white);
+    padding: 1rem;
+    border: 1px solid var(--bsu-blue);
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--bsu-blue);
+    color: var(--bsu-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--bsu-orange);
+}
+
+hr {
+    margin: 2rem 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+div {
+    margin-top: 1rem;
+}
+
+a {
+    color: var(--bsu-orange);
+}
+
+a:hover {
+    color: var(--bsu-blue);
+}
+
+#list_of_classes,
+#list_of_students,
+#show_class_details,
+#show_student_details,
+#update_class_details,
+#update_student_details,
+#delete_class,
+#delete_student,
+#create_new_class,
+#create_new_student {
+    background-color: #ffffff;
+    border-left: 4px solid var(--bsu-blue);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
