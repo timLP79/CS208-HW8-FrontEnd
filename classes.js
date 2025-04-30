@@ -11,11 +11,11 @@ const div_list_of_classes = document.getElementById("list_of_classes");
 
 
 //TODO: uncomment the following code to fetch and display the classes after the page loads
-document.addEventListener("DOMContentLoaded", async function()
+/*document.addEventListener("DOMContentLoaded", async function()
 {
     await getAndDisplayAllClasses();
 });
-
+*/
 
 // =====================================================================================================================
 // Functions that interact with the API
