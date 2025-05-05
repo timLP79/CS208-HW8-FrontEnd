@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registered Students Management</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 
 <body>
@@ -16,15 +16,10 @@
 
 <hr>
 
-<h2>List all registered students</h2>
-
-<hr>
-
 <h2>Add a new student to a class</h2>
-<form id="id_form_add_new_student_to_a_class" action="http://localhost:8080/add_student_to_class" method="post">
+<form id="id_form_add_student_to_a_class" action="http://localhost:8080/add_student_to_class" method="post">
     <label for="selectStudentForEnrollment">Student to enroll:</label>
     <select name="studentId" id="selectStudentForEnrollment">
-        <!-- TODO: Make a call to the API to retrieve all the students and then update the list of options -->
         <option value="" disabled selected>Select a student</option>
         <option value="1">Alice</option>
         <option value="2">Bob</option>
@@ -34,10 +29,6 @@
 
     <label for="selectClassForEnrollment">Class to enroll in:</label>
     <select name="classId" id="selectClassForEnrollment">
-        <!--
-            TODO: See registered_students.js for sample code that makes a call to the API
-             to retrieve all the classes and then updates/refreshes this list of options
-         -->
         <option value="" disabled selected>Select a class</option>
         <option value="1">CS 410 Databases</option>
         <option value="2">CS 408 Full Stack Web Development</option>
@@ -46,19 +37,37 @@
 
     <button type="submit">Enroll student in class</button>
 </form>
+<div id="add_student_to_class">
+    Information about the success/failure of adding a new student to a class will be displayed here...
+</div>
+<hr>
+
+<h2>List all registered students</h2>
+<button onclick="getAndDisplayAllRegisteredStudents()">Get and display all registered students</button>
+<div id="list_all_registered_students">
+    Information about the registered students will be displayed here...
+</div>
 
 <hr>
 
 <h2>Drop an existing student from a class</h2>
-
+<div id="drop_student_from_class">
+    Information about the success/failure of dropping a student will be displayed here...
+</div>
 <hr>
-
+<!--
 <h2>Show all students that are taking a class</h2>
-
+<button onclick="getAndDisplayStudentsTakingClass">Get and display all students</button>
+<div id="list_of_students_taking_class">
+    The students returned from the API call will be shown here...
+</div>
 <hr>
 
 <h2>Show all classes in which a student is enrolled</h2>
-
+<div id="list_of_classes_for_student">
+    Information about the list of class for a student will be displayed here...
+</div>
+-->
 <script src="registered_students.js"></script>
 </body>
 

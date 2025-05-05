@@ -106,10 +106,50 @@ a:hover {
 #delete_class,
 #delete_student,
 #create_new_class,
-#create_new_student {
+#create_new_student,
+#add_new_student_to_class,
+#drop_student_from_class,
+#list_all_registered_students,
+#list_of_students_taking_class,
+#list_of_classes_for_student {
     background-color: #ffffff;
     border-left: 4px solid var(--bsu-blue);
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--bsu-white);
+    appearance: none;           /* remove default arrow in some browsers */
+    cursor: pointer;
+}
+
+.show-student-in-list,
+.show-class-in-list {
+    background-color: var(--bsu-white);
+    border: 1px solid var(--bsu-dark-gray);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.show-student-details,
+.show-class-details {
+    background-color: var(--bsu-white);
+    border-left: 4px solid var(--bsu-blue);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+#id_form_add_new_student_to_a_class {
+    max-width: 500px;
 }
